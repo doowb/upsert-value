@@ -10,7 +10,7 @@
 var lazy = require('lazy-cache')(require);
 var put = lazy('put-value');
 var set = lazy('set-value');
-var has = lazy('has-value');
+var has = lazy('has-own-deep');
 
 /**
  * Update or set a value on the given object with the given key path.
