@@ -41,8 +41,8 @@ upsert(obj, 'a.b.c', 'foo');
 
 <!-- add an array of related projects, then un-escape the helper -->
 
-* [has-value](https://github.com/jonschlinkert/has-value): Returns true if a value exists, false if empty. Works with deeply nested values using… [more](https://github.com/jonschlinkert/has-value)
-* [put-value](https://github.com/tunnckocore/put-value#readme): Update only existing values fromn an object, works with dot notation paths like `  a.b.c` and… [more](https://github.com/tunnckocore/put-value#readme)
+* [has-own-deep](https://github.com/jonschlinkert/has-own-deep): Returns true if an object has an own, nested property using dot notation paths ('a.b.c').
+* [put-value](https://github.com/tunnckocore/put-value#readme): Update only existing values from an object, works with dot notation paths like `  a.b.c` and… [more](https://github.com/tunnckocore/put-value#readme)
 * [set-value](https://github.com/jonschlinkert/set-value): Create nested values and any intermediaries using dot notation (`'a.b.c'`) paths.
 
 ## Running tests
