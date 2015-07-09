@@ -1,49 +1,73 @@
-# upsert-value [![NPM version](https://badge.fury.io/js/upsert-value.svg)](http://badge.fury.io/js/upsert-value)  [![Build Status](https://travis-ci.org/doowb/upsert-value.svg)](https://travis-ci.org/doowb/upsert-value) 
+# upsert-value [![NPM version](https://badge.fury.io/js/upsert-value.svg)](http://badge.fury.io/js/upsert-value)  [![Build Status](https://travis-ci.org/doowb/upsert-value.svg)](https://travis-ci.org/doowb/upsert-value)
 
 > Update or set nested values and any intermediaries with dot notation (`'a.b.c'`) paths.
 
-## Install with [npm](npmjs.org)
+Install with [npm](https://www.npmjs.com/)
 
-```bash
-npm i upsert-value --save
+```sh
+$ npm i upsert-value --save
 ```
 
 ## Usage
 
 ```js
-var upsertValue = require('upsert-value');
+var upsert = require('upsert-value');
 ```
 
 ## API
+
 <!-- add a path or glob pattern for files with code comments to use for docs  -->
-{%= apidocs("index.js") %}
 
-## Related projects
-<!-- add an array of related projects, then un-escape the helper -->
-{%= related([]) %}  
+### [upsert](index.js#L32)
 
-## Running tests
-Install dev dependencies.
+Update or set a value on the given object with the given key path.
 
-```bash
-npm i -d && npm test
+**Params**
+
+* `obj` **{Object}**: Object to update/set.
+* `path` **{String}**: Key path to update/set.
+* `value` **{*}**: Value to update/set.
+* `returns` **{Object}**: Update object.
+
+**Example**
+
+```js
+var obj = {};
+upsert(obj, 'a.b.c', 'foo');
+//=> {a: {b: {c: 'foo'}}}
 ```
 
+## Related projects
+
+<!-- add an array of related projects, then un-escape the helper -->
+
+* [has-value](https://github.com/jonschlinkert/has-value): Returns true if a value exists, false if empty. Works with deeply nested values using… [more](https://github.com/jonschlinkert/has-value)
+* [put-value](https://github.com/tunnckocore/put-value#readme): Update only existing values fromn an object, works with dot notation paths like `  a.b.c` and… [more](https://github.com/tunnckocore/put-value#readme)
+* [set-value](https://github.com/jonschlinkert/set-value): Create nested values and any intermediaries using dot notation (`'a.b.c'`) paths.
+
+## Running tests
+
+Install dev dependencies:
+
+```sh
+$ npm i -d && npm test
+```
 
 ## Contributing
-Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/doowb/upsert-value/issues)
 
+Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/doowb/upsert-value/issues/new)
 
 ## Author
 
 **Brian Woodward**
- 
+
 + [github/doowb](https://github.com/doowb)
-+ [twitter/doowb](http://twitter.com/doowb) 
++ [twitter/doowb](http://twitter.com/doowb)
 
 ## License
+
 Copyright © 2015 Brian Woodward
-Released under the MIT license
+Released under the MIT license.
 
 ***
 

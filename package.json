@@ -21,5 +21,11 @@
   },
   "devDependencies": {
     "mocha": "*"
+  },
+  "dependencies": {
+    "has-value": "^0.2.0",
+    "lazy-cache": "^0.1.0",
+    "put-value": "0.0.0",
+    "set-value": "^0.2.0"
   }
 }
